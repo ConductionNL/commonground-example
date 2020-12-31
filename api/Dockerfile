@@ -31,6 +31,7 @@ RUN set -eux; \
 
 # copy only specifically what we need
 COPY .env ./
+COPY bin bin/
 COPY public public/
 COPY src src/
 COPY templates templates/
