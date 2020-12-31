@@ -23,8 +23,8 @@
         "webonyx/graphql-php": "^0.13.8"
     },
     "require-dev" : {
-        "phpunit/phpunit": "^9",
         "api-platform/schema-generator": "^2.1",
+        "phpunit/phpunit": "^9",
         "symfony/maker-bundle": "^1.11",
         "symfony/profiler-pack": "^1.0"
     },
