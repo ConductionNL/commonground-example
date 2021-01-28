@@ -59,7 +59,7 @@ $ docker volume prune
 The Common Ground base component provides a bit more than just a development interface, it also includes an example application and a backend that automatically hooks into your api. For now we're just going to focus on our api, but is good to read up on all the features of the Common Ground base component here.  
 
 ## Adding your own resources
-You can now access your api at http://localhost:8080/, as you can see it's pre-loaded with some example resources. Let's replace them with your own resources!
+You can now access your api at http://localhost/, as you can see it's pre-loaded with some example resources. Let's replace them with your own resources!
 
 First let's remove the resources currently in the api, we can do that by just removing the resources form our code base, navigate to the folder where you stored your code and open the folder api/src/Entity , you can find the example entities (the symfony name for resources) there. Just delete all the php files in that folder.
 
