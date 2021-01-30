@@ -45,6 +45,19 @@ Your computer should now start up your local development environment. Don't worr
 
 Open your browser type <http://localhost/> as address and hit enter, you should now see your common ground component up and running.
 
+### Git
+
+Note that making changes to the code base will already result in a new git status due to the automatic generation of some files when spinning your component in development mode.
+
+![Terminal view $git status](./resources/tutorial/git-status-dev.png)
+
+The files are as follows:
+- helm / [componentcode] - [version] .tgz: Your component's helm repository
+- helm / index.yaml: the index of the helm repositories present
+- openapi.yaml: The specification according to the OpenAPI standard
+- publiccode.yaml: description of your component according to the [publiccode standard](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)
+
+
 ### Trouble shooting
 When spinning up components we make extensive use of the cashing of docker, and use volumes to represent server disks. When running in to unexpected trouble always remember to clear your local docker vm with the -a command (removing image cash)
 
