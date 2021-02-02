@@ -45,6 +45,19 @@ Your computer should now start up your local development environment. Don't worr
 
 Open your browser type <http://localhost/> as address and hit enter, you should now see your common ground component up and running.
 
+### Git
+
+Note that making changes to the code base will already result in a new git status due to the automatic generation of some files when spinning your component in development mode.
+
+![Terminal view $git status](./resources/tutorial/git-status-dev.png)
+
+The files are as follows:
+- helm / [componentcode] - [version] .tgz: Your component's helm repository
+- helm / index.yaml: the index of the helm repositories present
+- openapi.yaml: The specification according to the OpenAPI standard
+- publiccode.yaml: description of your component according to the [publiccode standard](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)
+
+
 ### Trouble shooting
 When spinning up components we make extensive use of the cashing of docker, and use volumes to represent server disks. When running in to unexpected trouble always remember to clear your local docker vm with the -a command (removing image cash)
 
@@ -59,7 +72,7 @@ $ docker volume prune
 The Common Ground base component provides a bit more than just a development interface, it also includes an example application and a backend that automatically hooks into your api. For now we're just going to focus on our api, but is good to read up on all the features of the Common Ground base component here.  
 
 ## Adding your own resources
-You can now access your api at http://localhost:8080/, as you can see it's pre-loaded with some example resources. Let's replace them with your own resources!
+You can now access your api at http://localhost/, as you can see it's pre-loaded with some example resources. Let's replace them with your own resources!
 
 First let's remove the resources currently in the api, we can do that by just removing the resources form our code base, navigate to the folder where you stored your code and open the folder api/src/Entity , you can find the example entities (the symfony name for resources) there. Just delete all the php files in that folder.
 
