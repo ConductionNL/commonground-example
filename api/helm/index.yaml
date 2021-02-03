@@ -3,10 +3,10 @@ entries:
   ce:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-02-03T12:40:44.916023007Z"
+    created: "2021-02-03T13:03:25.726844746Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
-    digest: 1183d4582a33dd9829af94df87cccba718a1ff4ab2d0e217f9eb167ac760e0c8
+    digest: dc0cdd77f82275afed6834376250ee7061aa1eff18b575eb4116b6d0af0a6cf1
     home: ce.zaakonline.nl
     icon: ce.zaakonline.nl
     name: ce
@@ -16,7 +16,7 @@ entries:
   pc:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-02-03T12:40:44.921830689Z"
+    created: "2021-02-03T13:03:25.732979846Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
     digest: c7147901327e4770036ade713906209f66fcc6c971f97db6ea945d8398123077
@@ -31,7 +31,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-02-03T12:40:44.926097818Z"
+    created: "2021-02-03T13:03:25.736551378Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -60,4 +60,4 @@ entries:
     urls:
     - charts/postgresql-10.1.1.tgz
     version: 10.1.1
-generated: "2021-02-03T12:40:44.890957608Z"
+generated: "2021-02-03T13:03:25.710901904Z"
