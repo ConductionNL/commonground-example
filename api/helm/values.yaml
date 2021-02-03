@@ -4,26 +4,26 @@
 
 settings:
   registryBase: docker.io/conduction
-  projectName: ce
-  name: ce
-  title: Commonground Example
+  projectName: bri
+  name: bri
+  title: Basiregistratie Inkomen
   version: V1.0
   majorVersion: v1
   id: 
-  description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&#039;'
+  description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
   type: component
   repro: https://github.com/ConductionNL/commonground-example
-  demo: ce.zaakonline.nl
-  container: https://hub.docker.com/repository/docker/conduction/ce-php
+  demo: 
+  container: https://hub.docker.com/repository/docker/conduction/bri-php
   domain: conduction.nl
-  subdomain: ce
-  subpath: ce
+  subdomain: bri
+  subpath: bri
   subpathRouting: true
-  organisationName: Conduction
-  email: info@conduction.nl
+  organisationName: Belastingdienst
+  email: info@belastingdienst.nl
   country: Netherlands
-  state: Noord-Holland
-  locality: Amsterdam
+  state: Zuid-Holland
+  locality: Den Haag
   unit: Common-Ground
   env: dev
   web: false

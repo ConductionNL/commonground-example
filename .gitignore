@@ -10,3 +10,12 @@ api/helm/kubeconfig.yaml
 api/helm/*-kubeconfig.yaml
 api/helm/kubeconfig*
 api/config/
+
+# these are some files that are automatically generated when spinning your component in development mode
+# adding these file here will keep the working branch clean
+api/helm/Chart.yaml
+api/helm/ce-0.1.0.tgz
+api/helm/index.yaml
+api/helm/values.yaml
+api/public/schema/openapi.yaml
+api/public/schema/publiccode.yaml
