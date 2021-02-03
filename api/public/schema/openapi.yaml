@@ -1036,21 +1036,21 @@ paths:
             schema:
               $ref: '#/components/schemas/AuditTrail-write'
         description: 'The updated AuditTrail resource'
-  /b_r_is:
+  /bri_resources:
     get:
       tags:
-        - BRI
-      operationId: getBRICollection
-      summary: 'Retrieves the collection of BRI resources.'
+        - BriResource
+      operationId: getBriResourceCollection
+      summary: 'Retrieves the collection of BriResource resources.'
       responses:
         200:
-          description: 'BRI collection response'
+          description: 'BriResource collection response'
           content:
             application/ld+json:
               schema:
                 type: object
                 properties:
-                  'hydra:member': { type: array, items: { $ref: '#/components/schemas/BRI:jsonld' } }
+                  'hydra:member': { type: array, items: { $ref: '#/components/schemas/BriResource:jsonld' } }
                   'hydra:totalItems': { type: integer, minimum: 0 }
                   'hydra:view': { type: object, properties: { '@id': { type: string, format: iri-reference }, '@type': { type: string }, 'hydra:first': { type: string, format: iri-reference }, 'hydra:last': { type: string, format: iri-reference }, 'hydra:next': { type: string, format: iri-reference } } }
                   'hydra:search': { type: object, properties: { '@type': { type: string }, 'hydra:template': { type: string }, 'hydra:variableRepresentation': { type: string }, 'hydra:mapping': { type: array, items: { type: object, properties: { '@type': { type: string }, variable: { type: string }, property: { type: string, nullable: true }, required: { type: boolean } } } } } }
@@ -1060,7 +1060,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  'hydra:member': { type: array, items: { $ref: '#/components/schemas/BRI:jsonld' } }
+                  'hydra:member': { type: array, items: { $ref: '#/components/schemas/BriResource:jsonld' } }
                   'hydra:totalItems': { type: integer, minimum: 0 }
                   'hydra:view': { type: object, properties: { '@id': { type: string, format: iri-reference }, '@type': { type: string }, 'hydra:first': { type: string, format: iri-reference }, 'hydra:last': { type: string, format: iri-reference }, 'hydra:next': { type: string, format: iri-reference } } }
                   'hydra:search': { type: object, properties: { '@type': { type: string }, 'hydra:template': { type: string }, 'hydra:variableRepresentation': { type: string }, 'hydra:mapping': { type: array, items: { type: object, properties: { '@type': { type: string }, variable: { type: string }, property: { type: string, nullable: true }, required: { type: boolean } } } } } }
@@ -1070,57 +1070,57 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/json+hal:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/vnd.api+json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/json+vnd.api:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/health+json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/json+health:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/xml:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             application/x-yaml:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             text/csv:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
             text/html:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BRI'
+                  $ref: '#/components/schemas/BriResource'
       parameters:
         -
           name: page
@@ -1214,58 +1214,58 @@ paths:
         - application/health+json
     post:
       tags:
-        - BRI
-      operationId: postBRICollection
-      summary: 'Creates a BRI resource.'
+        - BriResource
+      operationId: postBriResourceCollection
+      summary: 'Creates a BriResource resource.'
       responses:
         201:
-          description: 'BRI resource created'
+          description: 'BriResource resource created'
           content:
             application/ld+json:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/json+ld:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/hal+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+hal:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/vnd.api+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+vnd.api:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/health+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+health:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/xml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/x-yaml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/csv:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/html:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
           links:
-            GetBRIItem:
+            GetBriResourceItem:
               parameters:
                 id: '$response.body#/id'
-              operationId: getBRIItem
-              description: 'The `id` value returned in the response can be used as the `id` parameter in `GET /b_r_is/{id}`.'
+              operationId: getBriResourceItem
+              description: 'The `id` value returned in the response can be used as the `id` parameter in `GET /bri_resources/{id}`.'
         400:
           description: 'Invalid input'
         404:
@@ -1274,44 +1274,44 @@ paths:
         content:
           application/ld+json:
             schema:
-              $ref: '#/components/schemas/BRI:jsonld'
+              $ref: '#/components/schemas/BriResource:jsonld'
           application/json+ld:
             schema:
-              $ref: '#/components/schemas/BRI:jsonld'
+              $ref: '#/components/schemas/BriResource:jsonld'
           application/hal+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json+hal:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/vnd.api+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json+vnd.api:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/health+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json+health:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/xml:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/x-yaml:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           text/csv:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           text/html:
             schema:
-              $ref: '#/components/schemas/BRI'
-        description: 'The new BRI resource'
+              $ref: '#/components/schemas/BriResource'
+        description: 'The new BriResource resource'
       parameters:
         -
           name: Authorization
@@ -1342,12 +1342,12 @@ paths:
           name: X-NLX-Audit-Clarification
           description: 'A clarification as to why a request has been made  (doelbinding)'
           in: header
-  '/b_r_is/{id}':
+  '/bri_resources/{id}':
     get:
       tags:
-        - BRI
-      operationId: getBRIItem
-      summary: 'Retrieves a BRI resource.'
+        - BriResource
+      operationId: getBriResourceItem
+      summary: 'Retrieves a BriResource resource.'
       parameters:
         -
           name: id
@@ -1428,59 +1428,59 @@ paths:
           in: query
       responses:
         200:
-          description: 'BRI resource response'
+          description: 'BriResource resource response'
           content:
             application/ld+json:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/json+ld:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/hal+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+hal:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/vnd.api+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+vnd.api:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/health+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+health:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/xml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/x-yaml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/csv:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/html:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
         404:
           description: 'Resource not found'
       produces:
         - application/health+json
     delete:
       tags:
-        - BRI
-      operationId: deleteBRIItem
-      summary: 'Removes the BRI resource.'
+        - BriResource
+      operationId: deleteBriResourceItem
+      summary: 'Removes the BriResource resource.'
       responses:
         204:
-          description: 'BRI resource deleted'
+          description: 'BriResource resource deleted'
         404:
           description: 'Resource not found'
       parameters:
@@ -1521,9 +1521,9 @@ paths:
           in: header
     put:
       tags:
-        - BRI
-      operationId: putBRIItem
-      summary: 'Replaces the BRI resource.'
+        - BriResource
+      operationId: putBriResourceItem
+      summary: 'Replaces the BriResource resource.'
       parameters:
         -
           name: id
@@ -1562,47 +1562,47 @@ paths:
           in: header
       responses:
         200:
-          description: 'BRI resource updated'
+          description: 'BriResource resource updated'
           content:
             application/ld+json:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/json+ld:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/hal+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+hal:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/vnd.api+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+vnd.api:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/health+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+health:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/xml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/x-yaml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/csv:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/html:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
         400:
           description: 'Invalid input'
         404:
@@ -1611,49 +1611,49 @@ paths:
         content:
           application/ld+json:
             schema:
-              $ref: '#/components/schemas/BRI:jsonld'
+              $ref: '#/components/schemas/BriResource:jsonld'
           application/json+ld:
             schema:
-              $ref: '#/components/schemas/BRI:jsonld'
+              $ref: '#/components/schemas/BriResource:jsonld'
           application/hal+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json+hal:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/vnd.api+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json+vnd.api:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/health+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/json+health:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/xml:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/x-yaml:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           text/csv:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           text/html:
             schema:
-              $ref: '#/components/schemas/BRI'
-        description: 'The updated BRI resource'
+              $ref: '#/components/schemas/BriResource'
+        description: 'The updated BriResource resource'
     patch:
       tags:
-        - BRI
-      operationId: patchBRIItem
-      summary: 'Updates the BRI resource.'
+        - BriResource
+      operationId: patchBriResourceItem
+      summary: 'Updates the BriResource resource.'
       parameters:
         -
           name: id
@@ -1692,47 +1692,47 @@ paths:
           in: header
       responses:
         200:
-          description: 'BRI resource updated'
+          description: 'BriResource resource updated'
           content:
             application/ld+json:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/json+ld:
               schema:
-                $ref: '#/components/schemas/BRI:jsonld'
+                $ref: '#/components/schemas/BriResource:jsonld'
             application/hal+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+hal:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/vnd.api+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+vnd.api:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/health+json:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/json+health:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/xml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             application/x-yaml:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/csv:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
             text/html:
               schema:
-                $ref: '#/components/schemas/BRI'
+                $ref: '#/components/schemas/BriResource'
         400:
           description: 'Invalid input'
         404:
@@ -1741,32 +1741,32 @@ paths:
         content:
           application/ld+json:
             schema:
-              $ref: '#/components/schemas/BRI:jsonld'
+              $ref: '#/components/schemas/BriResource:jsonld'
           application/json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/hal+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/vnd.api+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/merge-patch+json:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           application/xml:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           applications/x-yaml:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           text/csv:
             schema:
-              $ref: '#/components/schemas/BRI'
+              $ref: '#/components/schemas/BriResource'
           text/html:
             schema:
-              $ref: '#/components/schemas/BRI'
-        description: 'The updated BRI resource'
+              $ref: '#/components/schemas/BriResource'
+        description: 'The updated BriResource resource'
   /change_logs:
     get:
       tags:
@@ -2948,7 +2948,7 @@ components:
         '@type':
           readOnly: true
           type: string
-    BRI:
+    BriResource:
       type: object
       description: ''
       properties:
@@ -2962,7 +2962,7 @@ components:
           format: date-time
         YearIncome:
           type: integer
-    'BRI:jsonld':
+    'BriResource:jsonld':
       type: object
       description: ''
       properties:
@@ -3207,12 +3207,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-        example: '2021-02-03 15:02:37'
+        example: '2021-02-03 15:40:16'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-        example: '2021-02-03 15:02:37'
+        example: '2021-02-03 15:40:16'
     required: []
   AuditTrail-write:
     properties:
@@ -3260,12 +3260,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-        example: '2021-02-03 15:02:37'
+        example: '2021-02-03 15:40:16'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-        example: '2021-02-03 15:02:37'
+        example: '2021-02-03 15:40:16'
     required: []
   ChangeLog-write:
     properties:
@@ -3277,7 +3277,7 @@ definitions:
     required: []
 tags:
   -
-    name: BRI
+    name: BriResource
     description: |
       
       
