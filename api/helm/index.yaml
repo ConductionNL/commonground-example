@@ -3,10 +3,17 @@ entries:
   ce:
   - apiVersion: v1
     appVersion: V1.0
+<<<<<<< HEAD
     created: "2021-02-02T13:32:53.508629827Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
     digest: 04ccd5d796b4c8fdfd8391688e6f5886aa5134d0821a6868ec9debee5e5d8af7
+=======
+    created: "2021-02-03T12:18:06.130599726Z"
+    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
+      beschikbaar.
+    digest: fcee1991a447ff0b6e5b8260ad3839d9d5bffec9dbe6bcfcec99e184b379fa53
+>>>>>>> gitignore-additions
     home: ce.zaakonline.nl
     icon: ce.zaakonline.nl
     name: ce
@@ -16,7 +23,11 @@ entries:
   pc:
   - apiVersion: v1
     appVersion: V1.0
+<<<<<<< HEAD
     created: "2021-02-02T13:32:53.514092386Z"
+=======
+    created: "2021-02-03T12:18:06.137557331Z"
+>>>>>>> gitignore-additions
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
     digest: c7147901327e4770036ade713906209f66fcc6c971f97db6ea945d8398123077
@@ -31,7 +42,11 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
+<<<<<<< HEAD
     created: "2021-02-02T13:32:53.517910617Z"
+=======
+    created: "2021-02-03T12:18:06.141829206Z"
+>>>>>>> gitignore-additions
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -60,4 +75,8 @@ entries:
     urls:
     - charts/postgresql-10.1.1.tgz
     version: 10.1.1
+<<<<<<< HEAD
 generated: "2021-02-02T13:32:53.49426302Z"
+=======
+generated: "2021-02-03T12:18:06.115715293Z"
+>>>>>>> gitignore-additions
