@@ -6,11 +6,7 @@ url: "https://github.com/ConductionNL/commonground-example"
 landingURL: "ce.zaakonline.nl" 
 isBasedOn: "https://github.com/ConductionNL/Proto-component-commonground.git" 
 softwareVersion: "V1.0"
-<<<<<<< HEAD
-releaseDate: "2021-02-02"
-=======
 releaseDate: "2021-03-02"
->>>>>>> gitignore-additions
 logo: ce.zaakonline.nl 
 monochromeLogo: img/logo-mono.svg
 

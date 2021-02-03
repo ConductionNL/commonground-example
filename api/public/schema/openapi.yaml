@@ -3207,20 +3207,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-<<<<<<< HEAD
-        example: '2021-02-02 13:32:55'
-=======
-        example: '2021-02-03 12:18:08'
->>>>>>> gitignore-additions
+        example: '2021-02-03 12:40:48'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-<<<<<<< HEAD
-        example: '2021-02-02 13:32:55'
-=======
-        example: '2021-02-03 12:18:08'
->>>>>>> gitignore-additions
+        example: '2021-02-03 12:40:48'
     required: []
   AuditTrail-write:
     properties:
@@ -3268,20 +3260,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-<<<<<<< HEAD
-        example: '2021-02-02 13:32:55'
-=======
-        example: '2021-02-03 12:18:08'
->>>>>>> gitignore-additions
+        example: '2021-02-03 12:40:48'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-<<<<<<< HEAD
-        example: '2021-02-02 13:32:55'
-=======
-        example: '2021-02-03 12:18:08'
->>>>>>> gitignore-additions
+        example: '2021-02-03 12:40:48'
     required: []
   ChangeLog-write:
     properties:
@@ -3293,11 +3277,7 @@ definitions:
     required: []
 tags:
   -
-<<<<<<< HEAD
     name: BRI
-=======
-    name: Example
->>>>>>> gitignore-additions
     description: |
       
       
