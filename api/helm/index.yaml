@@ -1,12 +1,25 @@
 apiVersion: v1
 entries:
+  bri:
+  - apiVersion: v1
+    appVersion: V1.0
+    created: "2021-02-03T15:02:35.103013832Z"
+    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
+      beschikbaar.
+    digest: d9b400d0ee6208627278a4dce22294b386721e73c23aea0f4aa95d6f73a55fc6
+    home: bri.belastingdienst.nl
+    icon: bri.belastingdienst.nl
+    name: bri
+    urls:
+    - bri-0.1.0.tgz
+    version: 0.1.0
   ce:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-02-03T13:03:25.726844746Z"
+    created: "2021-02-03T15:02:35.119228479Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
-    digest: dc0cdd77f82275afed6834376250ee7061aa1eff18b575eb4116b6d0af0a6cf1
+    digest: aae2b8b93beea9570d7708c2eb45058a0906425f7fe5e68975de47208465e662
     home: ce.zaakonline.nl
     icon: ce.zaakonline.nl
     name: ce
@@ -16,7 +29,7 @@ entries:
   pc:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-02-03T13:03:25.732979846Z"
+    created: "2021-02-03T15:02:35.124049728Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
     digest: c7147901327e4770036ade713906209f66fcc6c971f97db6ea945d8398123077
@@ -31,7 +44,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-02-03T13:03:25.736551378Z"
+    created: "2021-02-03T15:02:35.127281055Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -60,4 +73,4 @@ entries:
     urls:
     - charts/postgresql-10.1.1.tgz
     version: 10.1.1
-generated: "2021-02-03T13:03:25.710901904Z"
+generated: "2021-02-03T15:02:35.085267272Z"
