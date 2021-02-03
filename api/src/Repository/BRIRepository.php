@@ -2,15 +2,15 @@
 
 namespace App\Repository;
 
-use App\Entity\BRI;
+use App\Entity\BriResource;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method BRI|null find($id, $lockMode = null, $lockVersion = null)
- * @method BRI|null findOneBy(array $criteria, array $orderBy = null)
- * @method BRI[]    findAll()
- * @method BRI[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method BriResource|null find($id, $lockMode = null, $lockVersion = null)
+ * @method BriResource|null findOneBy(array $criteria, array $orderBy = null)
+ * @method BriResource[]    findAll()
+ * @method BriResource[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class BRIRepository extends ServiceEntityRepository
 {

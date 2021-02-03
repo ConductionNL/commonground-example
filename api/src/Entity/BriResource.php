@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ApiResource()
  * @ORM\Entity(repositoryClass=BRIRepository::class)
  */
-class BRI
+class BriResource
 {
     /**
      * @ORM\Id
