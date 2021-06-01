@@ -1,4 +1,5 @@
 [![codecov](https://codecov.io/gh/ConductionNL/commonground-example/branch/master/graph/badge.svg?token=9PQOMBWL69)](https://codecov.io/gh/ConductionNL/commonground-example)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FConductionNL%2Fcommonground-example.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FConductionNL%2Fcommonground-example?ref=badge_shield)
 
 # Readme
 -------
@@ -61,3 +62,7 @@ Credits
 -------
 
 Created by [Ruben van der Linde](https://www.conduction.nl/team) for conduction. But based on [api platform](https://api-platform.com) by [Kévin Dunglas](https://dunglas.fr). Commercial support for common ground components available from [Conduction](https://www.conduction.nl).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FConductionNL%2Fcommonground-example.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FConductionNL%2Fcommonground-example?ref=badge_large)
