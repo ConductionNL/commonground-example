@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/ConductionNL/commonground-example/branch/master/graph/badge.svg?token=9PQOMBWL69)](https://codecov.io/gh/ConductionNL/commonground-example)
+
 # Readme
 -------
 Welcome to the the VNG Common Ground proto component!
